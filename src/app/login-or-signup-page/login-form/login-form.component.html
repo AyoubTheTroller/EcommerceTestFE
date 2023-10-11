@@ -1,0 +1,21 @@
+<section class="formContainer">
+    <div class="logoContainer">
+        <div class="image-box horizzontal-rectangle-3-2"><img [src]="logoUrl" alt="Logo"></div>
+        <p>{{ formTitle }}</p>
+    </div>
+    <form>
+        <div class="input-container input-email-container">
+            <div class="image-box square"><img [src]="emailIconUrl" alt="EmailIcon"></div>
+            <input type="text" name="Email" [(ngModel)]="email">
+        </div>
+        <div class="input-container input-password-container">
+            <div class="image-box square"><img [src]="passwordIconUrl" alt="PasswordIcon"></div>
+            <input type="password" name="Password" [(ngModel)]="password">
+        </div>
+    </form>
+
+    <div class="buttonsContainer">
+        <button (click)="onForgotPassword()">{{ forgotPasswordText }}</button>
+        <button (click)="onLogin()">{{ loginButtonText }}</button>
+    </div>
+</section>
