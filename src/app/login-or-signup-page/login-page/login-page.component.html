@@ -1,0 +1,16 @@
+<div class="grid-container">
+    <div class="leftColumn">
+        <app-login-or-signup (formToShow)="onFormToShow($event)"></app-login-or-signup>
+    </div>
+    <div class="rightColumn">
+        <ng-container *ngIf="showLoginForm; else signupBlock">
+            <app-login-form></app-login-form>
+        </ng-container>
+
+        <ng-template #signupBlock>
+            <app-signup-form></app-signup-form>
+        </ng-template>
+        
+        <app-or-login-with></app-or-login-with>
+    </div>
+</div>

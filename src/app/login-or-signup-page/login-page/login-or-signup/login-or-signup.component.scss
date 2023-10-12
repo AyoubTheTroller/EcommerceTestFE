@@ -1,0 +1,35 @@
+.login-signin-container {
+    background-size: cover;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+    height: 100%;
+}
+.split {
+	margin-top: 30%;
+	margin-bottom: 50%;
+	margin-left: 50%;
+	display: flex;
+	flex-direction: column;
+}
+.navBtn {
+	white-space: nowrap;
+	border: none;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+	font-size: 25px;
+	font-weight: bold;
+	cursor: pointer;
+	background: transparent;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+.navBtn.login-btn,
+.navBtn.signup-btn {
+    color: white;
+}
+.navBtn.login-btn.selected,
+.navBtn.signup-btn.selected {
+    color: black;
+    background-color: white;
+}

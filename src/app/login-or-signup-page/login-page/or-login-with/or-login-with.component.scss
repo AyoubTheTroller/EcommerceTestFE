@@ -1,0 +1,35 @@
+
+$gradient-grey: #D3D3D3;
+$gradient-lightgrey: #F7F7F7;
+
+.orLoginWithContainer {
+	display: grid;
+    grid-template-columns: repeat(3, 1fr);
+	justify-content: space-between;
+	background: linear-gradient(180deg, $gradient-grey 0%, $gradient-lightgrey 45%, white);
+	width: 100%;
+    padding-inline: 10%;
+	p {
+		color: var(--clr-input-primary-1);;
+		font-size: smaller;
+		font-weight: bold;
+		white-space: nowrap;
+	}
+    .socialLoginContainer {
+        display: grid;
+        place-content: center;
+        grid: max-content / 2rem max-content;
+        button {
+            cursor: pointer;
+            border: none;
+            background-color: unset;
+            color: var(--clr-input-primary-1);;
+            font-size: smaller;
+        }
+        .image-box{
+            img{
+                padding: 20%;
+            }
+        }
+    }
+}

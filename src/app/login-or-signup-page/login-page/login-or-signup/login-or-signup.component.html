@@ -1,0 +1,14 @@
+<section [style.background-image]="'url(' + backgroundUrl + ')'" class="login-signin-container">
+    <div class="split">
+        <button (click)="showLogin()" 
+                class="navBtn login-btn" 
+                [class.selected]="isSelectedLogin" 
+                tabindex="0">{{loginBtnText}}
+        </button>
+        <button (click)="showSignup()" 
+                class="navBtn signup-btn" 
+                [class.selected]="!isSelectedLogin" 
+                tabindex="0">{{signinBtnText}}
+        </button>
+    </div>
+</section>

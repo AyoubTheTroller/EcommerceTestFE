@@ -3,19 +3,18 @@
         <div class="image-box horizzontal-rectangle-3-2"><img [src]="logoUrl" alt="Logo"></div>
         <p>{{ formTitle }}</p>
     </div>
-    <form>
+    <form class="inputFormContainer">
         <div class="input-container input-email-container">
             <div class="image-box square"><img [src]="emailIconUrl" alt="EmailIcon"></div>
-            <input type="text" name="Email" [(ngModel)]="email">
+            <input type="text" name="Email" [(ngModel)]="email" placeholder="Enter your email">
         </div>
         <div class="input-container input-password-container">
             <div class="image-box square"><img [src]="passwordIconUrl" alt="PasswordIcon"></div>
-            <input type="password" name="Password" [(ngModel)]="password">
+            <input type="password" name="Password" [(ngModel)]="password" placeholder="Enter your password">
+        </div>
+        <div class="buttonsContainer">
+            <button (click)="onForgotPassword()" class="btnProblems">{{ forgotPasswordText }}</button>
+            <button (click)="onLogin()" class="btnSubmit">{{ loginButtonText }}</button>
         </div>
     </form>
-
-    <div class="buttonsContainer">
-        <button (click)="onForgotPassword()">{{ forgotPasswordText }}</button>
-        <button (click)="onLogin()">{{ loginButtonText }}</button>
-    </div>
 </section>
