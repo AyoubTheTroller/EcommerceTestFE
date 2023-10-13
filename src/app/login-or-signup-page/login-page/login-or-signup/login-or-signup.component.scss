@@ -33,3 +33,30 @@
     color: black;
     background-color: white;
 }
+@media(max-width: 600px){
+	.login-signin-container {
+		justify-content: flex-end;
+		padding-top: 5%;
+		height: auto;
+	}
+	.split {
+		display: flex;
+		flex-direction: row;
+		margin-inline: auto;
+		align-items: center;
+		margin-top: 0%;
+		margin-bottom: 0%;
+	}
+	.navBtn {
+		white-space: nowrap;
+		border: none;
+		border-bottom-left-radius: 0;
+		border-top-left-radius: 50px;
+		border-top-right-radius: 50px;
+		font-size: 25px;
+		font-weight: bold;
+		cursor: pointer;
+		background: transparent;
+		width: 10em;
+	}
+}

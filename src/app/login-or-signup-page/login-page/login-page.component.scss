@@ -18,3 +18,12 @@
     }
     
 }
+
+@media(max-width:600px){
+    .grid-container{
+        grid-template-areas: 
+            "a"
+            "b";
+        grid-template-rows: auto 1fr;
+    }
+}
